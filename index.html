@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sewa Mobil ABC</title>
+
+  <!-- Hubungkan file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Sewa Mobil ABC</h1>
+    </div>
+
+    <div class="mobil-list" id="mobil-list">
+      <!-- Daftar mobil akan dimasukkan lewat JS -->
+    </div>
+
+    <div class="form-pelanggan" id="form-pelanggan">
+        <h3>Data Pelanggan</h3>
+        <input type="text" id="nama" placeholder="Nama Pelanggan"><br>
+        <button onclick="hitungTotal()">Hitung Total</button>
+    </div>
+
+    <div class="ringkasan" id="ringkasan">
+      <!-- Ringkasan hasil sewa akan tampil di sini -->
+    </div>
+
+    <div class="aksi-button">
+      <button onclick="simpanPemesanan()">Simpan Pemesanan</button>
+      <button onclick="hapusPemesanan()">Hapus Semua Pemesanan</button>
+    </div>
+
+    <div class="daftar-pemesanan" id="daftar-pemesanan">
+      <!-- Daftar hasil dari localStorage -->
+    </div>
+
+  </div>
+
+  <!-- Hubungkan JS -->
+  <script src="script.js"></script>
+</body>
+</html>
